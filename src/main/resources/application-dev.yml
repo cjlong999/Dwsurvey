@@ -36,7 +36,7 @@ dwsurvey:
     built: 2023/04/15
 # 服务占用的端口号
 server:
-  port: 8080
+  port: 8088
 
 # Spring相关配置
 spring:
@@ -54,11 +54,11 @@ spring:
   datasource:
     #type: com.alibaba.druid.pool.DruidDataSource
     # 连接URL
-    url: jdbc:mysql://localhost:3306/dwsurvey?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://192.168.7.155:13306/dwsurvey?characterEncoding=UTF-8&useUnicode=true&useSSL=false&tinyInt1isBit=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
     # 连接账号
-    username: root
+    username: dodev
     # 连接密码
-    password: 123456,.
+    password: Dodev!!!2022
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 5
@@ -99,7 +99,7 @@ spring:
     properties:
       hibernate:
         #是否自动打印hql对应的sql语句
-        show_sql: false
+        show_sql: true
         #是否格式化sql语句
         format_sql: false
         #事务交由spring管理
